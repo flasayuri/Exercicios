@@ -3,7 +3,7 @@ public class Exercicio01 {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
-		// TODO Auto-generated method stub
+		// Para um ano de nascimento fornecido pelo usuário, informe a idade que ele terá no dia 31 de dezembro de 2021.
 		Double AnoNascimento;
 		Double IdadeAtual;
 		System.out.println("Digite o ano que você nasceu!");

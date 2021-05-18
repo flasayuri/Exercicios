@@ -2,23 +2,26 @@ import java.util.Scanner;
 public class Exercicio02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner leitor = new Scanner(System.in);
-		Double FilmeMinutos;
-		Double Hora, Minutos, Segundos, Horas;
+		int minutos, segundos;
+		double horas;
 		
-		System.out.println("Por favor, digite a duração do filme em minutos.");
-		FilmeMinutos = leitor.nextDouble();
+		System.out.println("Esse programa recebe a duração de um filme em minutos e exibe a conversão para horas e para segundos");
+		System.out.println("Por favor, informe a duração do filme em minutos");
 		
-		Hora = FilmeMinutos / 60;
+		minutos = leitor.nextInt();
 		
-		Minutos = FilmeMinutos - (Math.round(Hora) * 60);
-		Horas = (double) Math.round(Hora);
-		Segundos = FilmeMinutos -((Math.round(Hora) * 60) + Minutos);
+		segundos = minutos * 60;
 		
-		System.out.println("O filme tem duração de " + Horas + " horas, " + Minutos + " minutos e " + Segundos + "segundos.");
+		horas = minutos / 60.0;
+		
+		System.out.println("A duração desse filme é de " + segundos + " segundos");
+
+				System.out.println("A duração desse filme é de " + horas + " horas");
+			
 		
 		leitor.close();
+
 	}
 
 }
