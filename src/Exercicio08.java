@@ -6,22 +6,30 @@ public class Exercicio08 {
 		Scanner leitor = new Scanner(System.in);
 		int contador = 0;
 		Double nota = (double) 0;
+		int aluno = 0;
+		Double media;
+		int contadorAcimaMedia = 0;
+		int contadorAbaixoMedia = 0;
+		System.out.println("Informe a média");
+		media = leitor.nextDouble();
 		
-		while(contador < 50) {
+		while(contador < 10) {
 			System.out.println("Informe a nota do " + (contador + 1) + "º aluno");
 			nota = leitor.nextDouble();
 			contador = contador + 1;
+			if(nota > media) {
+				contadorAcimaMedia = contadorAcimaMedia + 1;
+				}
 		}
 		
-		if(nota > 7) {
-			
+		contadorAbaixoMedia = 10 - contadorAcimaMedia;
+		
+		System.out.println(contadorAcimaMedia + "alunos ficaram acima da média");
+		System.out.println(contadorAbaixoMedia + "alunos ficaram abaixo da média");
+		
+		leitor.close();	
 		}
-		
-		
-		
-		
-		
-		
+				
 	}
 
-}
+
